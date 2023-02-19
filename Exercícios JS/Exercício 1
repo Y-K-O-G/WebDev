@@ -1,4 +1,4 @@
-// Este exercício consiste em trocar os valores das variáveis "a" e "b" sem mudar o código indicado nem digitar números. 
+//Este exercício consiste em trocar os valores das variáveis "a" e "b" sem mudar o código indicado nem digitar números. 
 
 function test() {
     var a = "3";
