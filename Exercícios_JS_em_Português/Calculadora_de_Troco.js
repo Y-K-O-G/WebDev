@@ -1,6 +1,6 @@
 /*Primeira parte do que planejo ser um caixa de super mercado que informa ao usuário tudo o que está comprando, valor total e troco.
 Esta primeira versão processa apenas várias quantidades de um mesmo produto, mas a próxima versão usará array para armazenar o valor
-de vários produtos e terá a opção "cancelar compra.*/
+de vários produtos e terá a opção "cancelar compra".*/
 
 function compra() {
 
