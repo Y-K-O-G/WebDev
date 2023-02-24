@@ -2,63 +2,63 @@
 Esta primeira versão processa apenas várias quantidades de um mesmo produto, mas a próxima versão usará array para armazenar o valor
 de vários produtos e terá a opção "cancelar compra.*/
 
-function buy() {
+function compra() {
 
-    let priceOfProduct = parseFloat(prompt("What is the price of the product you are buying?"))
-    let price = priceOfProduct + 0;
+    let precoDoProduto = parseFloat(prompt("Qual o preço do produto que você está comprando?"))
+    let preco = precoDoProduto + 0;
   
-    if(isNaN(price)) {
-        alert("The price must be a number.");
-        return buy();
+    if(isNaN(preco)) {
+        alert("O preço deve ser um número.");
+        return compra();
     } else {
-        return price;
+        return preco;
     }
     
 }
 
-function howMany() {
+function quantos() {
 
-    let productCount = parseFloat(prompt("How many of this product are you buying?"))
-    let count = productCount + 0;
+    let quantosProdutos = parseFloat(prompt("Quantos deste mesmo produto você está comprando?"))
+    let conta = quantosProdutos + 0;
   
-    if(isNaN(count)) {
-        alert("The product count must be a number.");
-        return howMany();
+    if(isNaN(conta)) {
+        alert("A quantidade deste produto deve ser um número.");
+        return quantos();
     } else {
-        return count;
+        return conta;
     }
     
 }
 
-function payment() {
+function pagamento() {
 
-    let money = parseFloat(prompt("How much money are you using to pay?"))
-    let moneyUsed = money + 0;
+    let dinheiro = parseFloat(prompt("Quanto dinheiro você está usando para pagar?"))
+    let dinheiroUtilizado = dinheiro + 0;
     
-    if(isNaN(moneyUsed)) {
-        alert("The money value must be a number.");
-        return payment();
-    } else if(moneyUsed < productTotal) {
-        alert("This is not enough to pay for this product.");
-        return payment();
+    if(isNaN(dinheiroUtilizado)) {
+        alert("O valor do dinheiro deve ser um número.");
+        return pagamento();
+    } else if(dinheiroUtilizado < totalDoProduto) {
+        alert("Esta quantidade de dinheiro não é suficiente para pagar por este produto.");
+        return pagamento();
     } else {
-        return moneyUsed;
+        return dinheiroUtilizado;
     }
   
 }
 
-var buy = buy();
+var compra = compra();
 
-var howMany = howMany();
+var quantos = quantos();
 
-var productTotal = buy * howMany;
+var totalDoProduto = compra * quantos;
 
-var payment = payment();
+var pagamento = pagamento();
     
-var pay = payment - productTotal;
+var troco = pagamento - totalDoProduto;
 
-function market() {
-    alert("Your change is "+ (Math.round(pay * 10) / 10) + " dolars.");
+function mercado() {
+    alert("Seu troco é de "+ (Math.round(troco * 10) / 10) + " reais.");
 }
 
-market();
+mercado();
