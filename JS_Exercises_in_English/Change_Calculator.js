@@ -55,10 +55,10 @@ var productTotal = buy * howMany;
 
 var payment = payment();
     
-var pay = payment - productTotal;
+var change = payment - productTotal;
 
 function market() {
-    alert("Your change is "+ pay + " dolars.");
+    alert("Your change is "+ (Math.round(change * 100) / 100) + " dolars.");
 }
 
 market();
