@@ -58,7 +58,7 @@ var pagamento = pagamento();
 var troco = pagamento - totalDoProduto;
 
 function mercado() {
-    alert("Seu troco é de "+ (Math.round(troco * 10) / 10) + " reais.");
+    alert("Seu troco é de "+ (Math.round(troco * 100) / 100) + " reais.");
 }
 
 mercado();
