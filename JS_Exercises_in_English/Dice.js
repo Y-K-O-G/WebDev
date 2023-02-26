@@ -1,4 +1,4 @@
-//A code that simulates dice by generating random numbers under the user's specification."
+//A code that simulates dice by generating random numbers under the user's specification.
 
 function dice() {
     
