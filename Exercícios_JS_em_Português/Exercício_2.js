@@ -6,7 +6,7 @@ function tempoAteOs90(idade) {
     var diasRestantes = diasTotais - (idade * 365);
     var semanasRestantes = semanasTotais - (idade * 52);
     var mesesRestantes = mesesTotais - (idade * 12);
-    console.log("Você tem " + diasTotais + " dias, " + semanasTotais + " semanas, e " + mesesTotais + " meses restantes até os 90 anos.");
+    alert("Você tem " + diasTotais + " dias, " + semanasTotais + " semanas, e " + mesesTotais + " meses restantes até os 90 anos.");
 }
 
 tempoAteOs90(prompt ("Qual é a tua idade?"));  
