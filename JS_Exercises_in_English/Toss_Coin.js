@@ -1,12 +1,12 @@
-//A code that flips a coin and tell if the result is "Heads" or "Tails".
+//A code that tosses a coin and tell if the result is "Heads" or "Tails".
 
-function flipCoin() {
+function tossCoin() {
     let coin = Math.floor(Math.random() * 2);
     if(coin == 0) {
         alert("Heads")
         var playAgain =confirm("Do you wanna tossa the coin again?");
         if(playAgain == true) {
-            return flipCoin();
+            return tossCoin();
         } else {
             alert("The coin has been destroyed!");
         }
@@ -14,7 +14,7 @@ function flipCoin() {
         alert("Tails")
         var playAgain =confirm("Do you wanna tossa the coin again?");
         if(playAgain == true) {
-            return flipCoin();
+            return tossCoin();
         } else {
             alert("The coin has been destroyed!");
         }
@@ -24,7 +24,7 @@ function flipCoin() {
 var start = confirm("Do you want to toss a coin?");
 
 if(start == true) {
-    flipCoin();
+    tossCoin();
 } else {
     alert("So what are you doing here?");
 }
