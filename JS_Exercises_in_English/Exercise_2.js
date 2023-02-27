@@ -8,7 +8,7 @@ function timeLeft(age) {
     var daysLeft = totalDays - (age * 365);
     var weeksLeft = totalWeeks - (age * 52);
     var monthsLeft = totalMonths - (age * 12);
-    console.log("You have " + daysLeft + " days, " + weeksLeft + " weeks, and " + monthsLeft + " months left until you complete 90 years old.");
+    alert("You have " + daysLeft + " days, " + weeksLeft + " weeks, and " + monthsLeft + " months left until you complete 90 years old.");
 }
 
 timeLeft(prompt ("How old are you?"));  
