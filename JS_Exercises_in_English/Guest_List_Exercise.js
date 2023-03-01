@@ -6,8 +6,6 @@ var guestName = prompt("What is your name?");
 
 var checkName = guestName.slice(0, 1).toUpperCase() + guestName.slice(1, guestName.lenght).toLowerCase();
 
-alert(checkName);
-
 if(guestList.includes(checkName)){
     alert("Welcome to the party!!!")
 } else {
