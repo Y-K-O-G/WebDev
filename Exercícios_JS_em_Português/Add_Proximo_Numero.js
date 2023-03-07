@@ -1,4 +1,4 @@
-/*Este primeiro desafio consiste em criar uma função que adiciona
+/*Este desafio consiste em criar uma função que adiciona
 o próximo número a um Array toda vez que a função é chamada.*/
 
 var numeros = [];
