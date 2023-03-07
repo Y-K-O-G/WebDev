@@ -2,7 +2,7 @@
 Based on a game that kids play in England, the code must
 create an empty array, then add numbers to it from 1 to 100,
 but for multiples of 3 it must add "Fizz" instead of the number,
-for multiples of 5 it must add "Buzz, ando for multiples of
+for multiples of 5 it must add "Buzz, and for multiples of
 both 3 and 5, it must add "FizzBuzz".*/
 
 var numbers = [];
