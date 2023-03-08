@@ -1,4 +1,4 @@
-/*A code that writes the lyrics of the song "99 Bottles of Beers" from "Melvins".*/
+/*A code that writes the lyrics of the song "99 Bottles of Beer" from "Melvins".*/
 
 var bottlesOfBeer = 99;
 
